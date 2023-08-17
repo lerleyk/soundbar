@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest"> 
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#798688">
+<meta name="msapplication-TileColor" content="#798688">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta name="theme-color" content="#798688">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundbar</title>
+    <style>
+        :root {
+            font-size: 60px;
+        }
+        body{
+            background: #798688;
+        }
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            background: linear-gradient(145deg, #798688, #B1C4C6);
+            box-shadow: 0.1rem 0.1rem 0.2rem #626C6D, -0.1rem -0.1rem 0.2rem #C8DEE1;
+            border: 0;
+            border-radius: 0.2rem;
+            font-size: 1rem;
+            padding: 0.5rem;
+            margin: 0.35rem;
+        }
+
+        button:active {
+            box-shadow: inset 0.1rem 0.1rem 0.2rem #626C6D, inset -0.1rem -0.1rem 0.2rem #C8DEE1;
+        }
+    </style>
+</head>
+<body>
+   <main>
+    <button data-src="Scream.mp3">😯</button>
+    <button data-src="laugh.mp3">🤣</button>
+    <button data-src="idk.mp3">💩</button>
+    <button data-src="fart.mp3">💨</button>
+    <button data-src="discord-notification.mp3">📠</button>
+    <button data-src="uwu.mp3">🫦</button>
+    <button data-src="kurwa-raketa.mp3">🚀</button>
+    <button data-src="oh no.mp3">😭</button>
+    <button data-src="ah shit.mp3">🙄</button>
+    <button data-src="galaxy-meme.mp3">😎</button>
+    <button data-src="end.mp3">👋</button>
+    <button data-src="indian under water.mp3">🌊</button>
+    <button data-src="snore.mp3">💤</button>
+    <button data-src="china.mp3">🌐</button>
+    <button data-src="skibidi-toilet.mp3">🗿</button>
+    <button data-src="dog.mp3">🐶</button>
+    <button data-src="wow.mp3">🎆</button>
+    <button data-src="ya.mp3">👉</button>
+    <button data-src="ghost.mp3">👻</button>
+    <button data-src="kkt.mp3">🙃</button>
+    <button data-src="spongebob-fail.mp3">😑</button>
+   </main>
+   <br><br><br>
+    <button onclick="window.location.reload()" style="position: fixed; bottom: 0; right: 0;">🛑</button>
+    <audio src="Scream.mp3"></audio>
+    <audio src="laugh.mp3"></audio>
+    <audio src="idk.mp3"></audio>
+    <audio src="fart.mp3"></audio>
+    <audio src="discord-notification.mp3"></audio>
+    <audio src="uwu.mp3"></audio>
+    <audio src="oh no.mp3"></audio>
+    <audio src="kurwa-raketa.mp3"></audio>
+    <audio src="ah shit.mp3"></audio>
+    <audio src="galaxy-meme.mp3"></audio>
+    <audio src="end.mp3"></audio>
+    <audio src="nevim.mp3"></audio>
+    <audio src="indian under water.mp3"></audio>
+    <audio src="snore.mp3"></audio>
+    <audio src="china.mp3"></audio>
+    <audio src="skibidi-toilet.mp3"></audio>
+    <audio src="dog.mp3"></audio>
+    <audio src="wow.mp3"></audio>
+    <audio src="ya.mp3"></audio>
+    <audio src="kkt.mp3"></audio>
+    <audio src="ghost.mp3"></audio>
+    <audio src="spongebob-fail.mp3"></audio>
+
+    
+    <script>
+        var x = document.querySelectorAll("audio");
+        var b = document.querySelectorAll("button");
+
+    b.forEach(button =>{
+       button.addEventListener('click', () => {
+        document.querySelector('audio[src="'+ button.getAttribute('data-src') +'"]').play();
+       });
+    });  
+        
+    </script>
+</body>
+</html>
